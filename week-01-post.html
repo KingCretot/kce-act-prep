@@ -280,7 +280,7 @@ body.stepped main{flex:1 0 auto;width:100%}
   <h2 class="part">Before our next session</h2>
   <ul class="checklist" style="background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 20px">
     <li>Take the KCE ACT Diagnostic if you haven’t yet. It’s on the program page, right before Week 1, and takes about 40 minutes.</li>
-    <li>Say the ten Formula Lab formulas from memory. Make an index card for any you miss and review them five minutes a day.</li>
+    <li>Study your <b>Week 1 Roots &amp; Formulas</b> sheet: learn the ten word roots and say each formula from memory. <a href="https://kingcretot.github.io/kce-act-prep/week-01-roots-formulas.html" target="_blank" rel="noopener">Open, print or download it</a></li>
     <li>Bring one question from this week you want to go over together.</li>
   </ul>
 
@@ -373,7 +373,7 @@ function refreshSend(){
   if(needEl){
     if(sent) needEl.style.display='none';
     else { needEl.style.display='block';
-      needEl.innerHTML=!enough ? (REQUIRE_ALL ? 'Answer all <b>'+Q.length+'</b> questions first ('+attempted+' done) — then the email button turns on. <button type="button" class="linkbtn" onclick="kceFirstOpen&&kceFirstOpen()">Go to the first one you skipped</button>' : 'Answer at least one question — then the email button turns on.') : (!nameOk ? 'Type your name above — then the email button turns on.' : 'Ready to send.'); }
+      needEl.innerHTML=!enough ? (REQUIRE_ALL ? 'Finish all <b>'+Q.length+'</b> questions first, right or wrong ('+attempted+' done). Then the email button turns on. <button type="button" class="linkbtn" onclick="kceFirstOpen&&kceFirstOpen()">Go to the first one you skipped</button>' : 'Answer at least one question — then the email button turns on.') : (!nameOk ? 'Type your name above — then the email button turns on.' : 'Ready to send.'); }
   }
 }
 function line(q){
